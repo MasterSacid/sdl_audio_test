@@ -22,7 +22,8 @@ include_directories(
 )
 
 # Create executable
-add_executable(sdl_audio_test main.c)
+add_executable(sdl_audio_test main.c audioplayer.c)
+
 
 # Link SDL2 libraries
 target_link_libraries(sdl_audio_test ${SDL2_LIBRARIES})
